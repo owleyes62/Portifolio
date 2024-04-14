@@ -1,4 +1,11 @@
 /* ESTILO GERAL */
+:root {
+    --cor-primaria: #864cbd;
+    --cor-secundaria: #000;
+    --cor-terciaria: #836FFF;
+  }
+  
+
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +32,7 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #ff9900; /* alterado para laranja */
+    background-color: var(--cor-primaria); /* alterado para laranja */
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -33,18 +40,19 @@ body {
 }
 
 h2.titulo {
-    color: #000; /* alterado para preto */
+    color: var(--cor-secundaria); /* alterado para preto */
     font-size: 38px;
     text-align: center;
+    padding: 20px;
 }
 
 h2.titulo span {
-    color: #ff9900; /* alterado para laranja */
+    color: var(--cor-terciaria); /* alterado para laranja */
 }
 
 button:hover,
 form .btn-enviar input:hover {
-    box-shadow: 0px 0px 8px #ff9900; /* alterado para laranja */
+    box-shadow: 0px 0px 8px var(--cor-primaria); /* alterado para laranja */
     transform: scale(1.05);
 }
 
@@ -67,7 +75,7 @@ header a {
 }
 
 header nav.menu-desktop a:hover {
-    color: #000; /* alterado para preto */
+    color: var(--cor-secundaria); /* alterado para preto */
     transform: scale(1.05);
 }
 
@@ -87,7 +95,7 @@ header nav.menu-desktop ul li {
 }
 
 .btn-abrir-menu i {
-    color: #ff9900; /* alterado para laranja */
+    color: var(--cor-primaria); /* alterado para laranja */
     font-size: 40px;
 }
 
@@ -116,7 +124,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile .btn-fechar i {
-    color: #ff9900; /* alterado para laranja */
+    color: var(--cor-primaria); /* alterado para laranja */
     font-size: 30px;
 }
 
@@ -125,7 +133,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile nav ul li a {
-    color: #000; /* alterado para preto */
+    color: var(--cor-secundaria); /* alterado para preto */
     font-size: 20px;
     font-weight: 300;
     padding: 20px 8%;
@@ -133,12 +141,12 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile nav ul li a:hover {
-    background-color: #ff9900; /* alterado para laranja */
+    background-color: var(--cor-primaria); /* alterado para laranja */
     color: #fff; /* alterado para branco */
 }
 
 .overlay-menu {
-    background-color: #000000df;
+    background-color: var(--cor-secundaria);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -156,11 +164,11 @@ section.topo-do-site {
 }
 
 .topo-do-site h1 {
-    color: #000; /* Cor do texto preto */
+    color: var(--cor-secundaria); /* Cor do texto preto */
 }
 
 .topo-do-site .txt-topo-site p {
-    color: #000; /* Cor do texto preto */
+    color: var(--cor-secundaria); /* Cor do texto preto */
 }
 
 
@@ -179,8 +187,8 @@ section.topo-do-site {
 }
 
 .dropdown__toggle {
-    background-color: #FFA500;
-    color: #000;
+    background-color:var(--cor-primaria);
+    color: var(--cor-secundaria);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -198,7 +206,7 @@ section.topo-do-site {
 }
 
 .dropdown__menu a {
-    color: #000;
+    color: var(--cor-secundaria);
     padding: 10px 20px;
     text-decoration: none;
     display: block;
@@ -216,20 +224,20 @@ section.topo-do-site {
 
 /* ESTILO DO SOBRE */
 section.sobre {
-    padding: 80px 4%;
+    padding: 40px 4%;
     background-color: #fff; /* Cor de fundo branca */
 }
 
 .sobre .txt-sobre {
-    color: #000; /* Cor do texto preto */
+    color: var(--cor-secundaria); /* Cor do texto preto */
 }
 
 .sobre .txt-sobre h2 span {
-    color: #FFA500; /* Cor do texto laranja */
+    color: var(--cor-terciaria); /* Cor do texto laranja */
 }
 
 .sobre .txt-sobre p {
-    color: #000; /* Cor do texto preto */
+    color: var(--cor-secundaria); /* Cor do texto preto */
 }
 
  /* PORTFÓLIO */
@@ -265,7 +273,7 @@ form {
 form input,
 form textarea {
     width: 100%;
-    background-color: #242424;
+    background-color: var(--cor-primaria);
     border: 0;
     outline: 0;
     padding: 20px 15px;
@@ -274,9 +282,15 @@ form textarea {
     font-size: 18px;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: #000; /* Cor desejada para o placeholder */
+}
+
 form textarea {
     resize: none;
-    max-height: 200px;
+    max-height: 400px;
+    ;
 }
 
 form .btn-enviar {
@@ -286,8 +300,8 @@ form .btn-enviar {
 
 form .btn-enviar input {
     width: 120px;
-    background-color: #FFA500;
-    color: #000;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
@@ -308,9 +322,9 @@ footer .flex {
 
 
 footer .line-footer p i {
-    color: #FFA500; /* Cor do texto laranja */
+    color: var(--cor-primaria); /* Cor do texto laranja */
 }
 
 footer .line-footer p a {
-    color: #000; /* Cor do texto preto */
+    color: var(--cor-secundaria); /* Cor do texto preto */
 }
