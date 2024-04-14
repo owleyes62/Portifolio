@@ -3,6 +3,8 @@
     --cor-primaria: #864cbd;
     --cor-secundaria: #000;
     --cor-terciaria: #836FFF;
+    --cor-quaternaria: #F0FFFF;
+    --cor-quiternaria: #E0FFFF;
   }
   
 
@@ -14,7 +16,7 @@
 }
 
 body {
-    background-color: #fff; /* alterado para branco */
+    background-color: var(--cor-quaternaria); /* alterado para branco */
     height: 100vh;
 }
 
@@ -59,7 +61,7 @@ form .btn-enviar input:hover {
 /* ESTILO DO CABEÇALHO */
 header {
     padding: 40px 4%;
-    background: #E0FFFF;
+    background: var(--cor-quaternaria);
 }
 
 header > .interface {
@@ -122,7 +124,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile {
-    background-color: #fff; /* alterado para branco */
+    background-color: var(--cor-quiternaria); /* alterado para branco */
     height: 100vh;
     position: fixed;
     top: 0;
@@ -164,7 +166,7 @@ header nav.menu-desktop ul li {
 
 .menu-mobile nav ul li a:hover {
     background-color: var(--cor-primaria); /* alterado para laranja */
-    color: #fff; /* alterado para branco */
+    color: var(--cor-quiternaria); /* alterado para branco */
 }
 
 .overlay-menu {
@@ -182,7 +184,7 @@ header nav.menu-desktop ul li {
 /* ESTILO DO TOPO DO SITE */
 section.topo-do-site {
     padding: 40px 4%;
-    background-color: #fff; /* Cor de fundo branca */
+    background-color: var(--cor-quiternaria); /* Cor de fundo branca */
 }
 
 .topo-do-site h1 {
@@ -197,9 +199,9 @@ section.topo-do-site {
 /* ESTILO DAS ESPECIALIDADES */
 .especialidades-box.dropdown_dropdownItemContainer__Uye51 {
     display: inline-block;
-    width: 50%; /* Para dividir em duas colunas */
-    padding: 0 10px; /* Espaçamento entre as colunas */
-    box-sizing: border-box; /* Para incluir padding na largura */
+    width: 50%; 
+    padding: 0 10px; 
+    box-sizing: border-box; 
 }
 
 .dropdown_dropdownItemContainer__Uye51 {
@@ -211,6 +213,7 @@ section.topo-do-site {
 .dropdown__toggle {
     background-color:var(--cor-primaria);
     color: var(--cor-secundaria);
+    width: 100%;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -220,15 +223,15 @@ section.topo-do-site {
 
 .dropdown__menu {
     position: absolute;
-    background-color: #fff;
-    min-width: 160px;
+    min-width: 130px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
     display: none;
 }
 
 .dropdown__menu a {
-    color: var(--cor-secundaria);
+    background-color: var(--cor-quiternaria);
+    color: var(--cor-primaria);
     padding: 10px 20px;
     text-decoration: none;
     display: block;
@@ -247,7 +250,7 @@ section.topo-do-site {
 /* ESTILO DO SOBRE */
 section.sobre {
     padding: 40px 4%;
-    background-color: #fff; /* Cor de fundo branca */
+    background-color: var(--cor-quiternaria); /* Cor de fundo branca */
 }
 
 .sobre .txt-sobre {
@@ -260,6 +263,18 @@ section.sobre {
 
 .sobre .txt-sobre p {
     color: var(--cor-secundaria); /* Cor do texto preto */
+}
+
+.img-sobre {
+    padding: 0px 20px;
+}
+
+.img-sobre img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner */
+    height: auto; /* Permite que a altura seja ajustada automaticamente para manter a proporção da imagem */
+    max-width: 300px; /* Define a largura máxima da imagem para evitar que ela fique muito grande */
+    border-radius: 50%; /* Aplica um arredondamento de borda para criar um efeito circular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave à imagem */
 }
 
  /* PORTFÓLIO */
@@ -333,7 +348,7 @@ form .btn-enviar input {
 
 footer {
     padding: 40px 4%;
-    background-color: #fff; /* Cor de fundo branca */
+    background-color: var(--cor-quiternaria); /* Cor de fundo branca */
 }
 
 footer .flex {
