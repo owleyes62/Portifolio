@@ -294,7 +294,7 @@ section.portfolio .flex {
 
 /* ESTILO DO FORMULÁRIO DE CONTATO */
 section.formulario {
-    padding: 80px 4%;
+    padding: 50px 4%;
 }
 
 form {
@@ -364,4 +364,10 @@ footer .line-footer p i {
 
 footer .line-footer p a {
     color: var(--cor-secundaria); /* Cor do texto preto */
+}
+
+/* ESTILOS ADICIONAIS*/
+
+html {
+    scroll-behavior: smooth;
 }
