@@ -59,6 +59,7 @@ form .btn-enviar input:hover {
 /* ESTILO DO CABEÇALHO */
 header {
     padding: 40px 4%;
+    background: #E0FFFF;
 }
 
 header > .interface {
@@ -86,6 +87,27 @@ header nav ul {
 header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
+}
+
+.btn-social a {
+    display: inline-block; /* Para que as âncoras se comportem como blocos */
+}
+
+.btn-social button {
+    width: 50px; /* Defina o tamanho desejado */
+    height: 50px; /* Defina o tamanho desejado */
+    border-radius: 50%; /* Para criar um botão circular */
+    border: none; /* Remova a borda */
+    background-color: var(--cor-terciaria); /* Cor de fundo */
+    font-size: 30px; /* Tamanho do ícone */
+    color: #000; /* Cor do ícone */
+    margin: 0 5px; /* Espaçamento entre os botões */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    transition: all 0.3s ease; /* Efeito de transição suave */
+}
+
+.btn-social button:hover {
+    transform: scale(1.1); /* Efeito de escala ao passar o mouse */
 }
 
 /* ESTILO DO MENU MOBILE */
