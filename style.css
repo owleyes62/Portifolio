@@ -180,6 +180,12 @@ header nav.menu-desktop ul li {
     display: none;
 }
 
+.overlay img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 /* ESTILO DO TOPO DO SITE */
 section.topo-do-site {
@@ -211,7 +217,7 @@ section.topo-do-site {
 }
 
 .dropdown__toggle {
-    background-color:var(--cor-primaria);
+    background-color:var(--cor-quiternaria);
     color: var(--cor-secundaria);
     width: 100%;
     padding: 10px 20px;
@@ -278,18 +284,64 @@ section.sobre {
 }
 
  /* PORTFÓLIO */
- section.portfolio {
-    padding: 80px 8%;
+ .portfolio {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-color: var(--cor-terciaria) var(--cor-quaternaria);
 }
 
-.img-port {
-    width: 100%;
-    max-width: 360px;
-    margin: 0 auto;
+/* Estilo para os itens dentro da seção */
+.portfolio .flex {
+    display: inline-flex; 
 }
+
+ section.portfolio {
+   padding-left: 40px;
+}
+
 
 section.portfolio .flex {
    gap: 60px;
+}
+
+.card-projetos {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 350px;
+    margin-bottom: 20px; /* Espaçamento entre os cards */
+}
+
+.card-projetos img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-projetos-body {
+    padding: 20px;
+}
+
+.card-projetos-body h3 {
+    margin-top: 0;
+}
+
+.card-projetos-body p {
+    margin-bottom: 10px;
+}
+
+.card-projetos-body button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.card-projetos-body button:hover {
+    background-color: #0056b3;
 }
 
 /* ESTILO DO FORMULÁRIO DE CONTATO */
@@ -370,4 +422,34 @@ footer .line-footer p a {
 
 html {
     scroll-behavior: smooth;
+}
+
+/* Botão "Voltar ao Topo" */
+.btn-voltar-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-voltar-topo:hover {
+    background-color: #555;
+}
+
+/* Exibir o botão apenas quando a página for rolada */
+@media (min-height: 500px) {
+    .btn-voltar-topo {
+        display: block;
+    }
 }
