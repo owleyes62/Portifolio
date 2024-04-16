@@ -91,6 +91,10 @@ header nav.menu-desktop ul li {
     padding: 0 40px;
 }
 
+.titulo{
+    font-size: 30px;
+}
+
 .btn-social a {
     display: inline-block; /* Para que as âncoras se comportem como blocos */
 }
@@ -306,7 +310,7 @@ section.portfolio .flex {
 }
 
 .card-projetos {
-    border: 1px solid #ccc;
+    border: 1px solid #b4b4b4d2;
     border-radius: 5px;
     overflow: hidden;
     width: 350px;
@@ -317,10 +321,12 @@ section.portfolio .flex {
     width: 100%;
     height: auto;
     display: block;
+    padding: 5px;
 }
 
 .card-projetos-body {
     padding: 20px;
+    text-align: center;
 }
 
 .card-projetos-body h3 {
@@ -331,17 +337,16 @@ section.portfolio .flex {
     margin-bottom: 10px;
 }
 
-.card-projetos-body button {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
+.btn-portifolio {
+    background-color:var(--cor-quiternaria);
+    color: var(--cor-secundaria);
+    width: 120px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-.card-projetos-body button:hover {
-    background-color: #0056b3;
+    font-size: 16px;
+    margin: 10px
 }
 
 /* ESTILO DO FORMULÁRIO DE CONTATO */
