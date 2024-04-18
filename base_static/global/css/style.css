@@ -287,6 +287,19 @@ section.sobre {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave à imagem */
 }
 
+.btn-sobre {
+    background-color:var(--cor-quaternaria);
+    color: var(--cor-secundaria);
+    width: 120px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
  /* PORTFÓLIO */
  .portfolio {
     width: 100%;
